@@ -1,0 +1,620 @@
+{
+  "metadata": {
+    "title": "Restaurant Menu Optimization - Linear & Mixed Integer Programming",
+    "timestamp": "2026-05-01",
+    "version": "2.0 (Extended)"
+  },
+  "models": {
+    "lp": {
+      "status": "Optimal",
+      "profit": 1976.4112821075598,
+      "portions": {
+        "moussakas": 0.0,
+        "pastitsio": 0.0,
+        "gemista": 0.0,
+        "makaronia_kima": 45.0,
+        "pastitsada_kotopoulo": 0.0,
+        "stifado": 0.0,
+        "briam": 13.357143,
+        "fasolada": 30.0,
+        "yiouvetsi": 0.0,
+        "spanakorizo": 40.0,
+        "gigantes_plaki": 32.0,
+        "mpamies_lathi": 28.0,
+        "kolokithokeftedes": 30.0,
+        "melitzanosalata": 35.0,
+        "keftedes": 0.0,
+        "keftedes_hirino": 0.0,
+        "keftedes_tomata": 0.0,
+        "paidakia": 20.0,
+        "souvlaki": 44.0,
+        "garides_saganaki": 15.0,
+        "htapodi_stifado": 0.0
+      },
+      "on_menu": {
+        "moussakas": 0,
+        "pastitsio": 0,
+        "gemista": 0,
+        "makaronia_kima": 1,
+        "pastitsada_kotopoulo": 0,
+        "stifado": 0,
+        "briam": 1,
+        "fasolada": 1,
+        "yiouvetsi": 0,
+        "spanakorizo": 1,
+        "gigantes_plaki": 1,
+        "mpamies_lathi": 1,
+        "kolokithokeftedes": 1,
+        "melitzanosalata": 1,
+        "keftedes": 0,
+        "keftedes_hirino": 0,
+        "keftedes_tomata": 0,
+        "paidakia": 1,
+        "souvlaki": 1,
+        "garides_saganaki": 1,
+        "htapodi_stifado": 0
+      },
+      "labor_used": 65.00000003333334
+    },
+    "mip": {
+      "status": "Optimal",
+      "profit": 1709.5335137499999,
+      "portions": {
+        "moussakas": 0.0,
+        "pastitsio": 0.0,
+        "gemista": 0.0,
+        "makaronia_kima": 45.0,
+        "pastitsada_kotopoulo": 0.0,
+        "stifado": 0.0,
+        "briam": 0.0,
+        "fasolada": 30.0,
+        "yiouvetsi": 0.0,
+        "spanakorizo": 40.0,
+        "gigantes_plaki": 32.0,
+        "mpamies_lathi": 28.0,
+        "kolokithokeftedes": 0.0,
+        "melitzanosalata": 35.0,
+        "keftedes": 37.9375,
+        "keftedes_hirino": 0.0,
+        "keftedes_tomata": 0.0,
+        "paidakia": 20.0,
+        "souvlaki": 44.0,
+        "garides_saganaki": 15.0,
+        "htapodi_stifado": 0.0
+      },
+      "on_menu": {
+        "moussakas": 0,
+        "pastitsio": 0,
+        "gemista": 0,
+        "makaronia_kima": 1,
+        "pastitsada_kotopoulo": 0,
+        "stifado": 0,
+        "briam": 0,
+        "fasolada": 1,
+        "yiouvetsi": 0,
+        "spanakorizo": 1,
+        "gigantes_plaki": 1,
+        "mpamies_lathi": 1,
+        "kolokithokeftedes": 0,
+        "melitzanosalata": 1,
+        "keftedes": 1,
+        "keftedes_hirino": 0,
+        "keftedes_tomata": 0,
+        "paidakia": 1,
+        "souvlaki": 1,
+        "garides_saganaki": 1,
+        "htapodi_stifado": 0
+      },
+      "labor_used": 65.0
+    }
+  },
+  "sensitivity": {
+    "waste": [
+      {
+        "waste_fraction": 0.0,
+        "profit": 1754.7491874999996,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "waste_fraction": 0.03,
+        "profit": 1732.141350625,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "waste_fraction": 0.06,
+        "profit": 1709.5335137499999,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "waste_fraction": 0.09,
+        "profit": 1686.925676875,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "waste_fraction": 0.12,
+        "profit": 1664.31784,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "waste_fraction": 0.15,
+        "profit": 1641.710003125,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "waste_fraction": 0.2,
+        "profit": 1604.0302749999998,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      }
+    ],
+    "labor_hours": [
+      {
+        "labor_hours": 40,
+        "profit": 1209.67695,
+        "n_dishes": 7,
+        "labor_used": 40.0
+      },
+      {
+        "labor_hours": 50,
+        "profit": 1433.15985,
+        "n_dishes": 8,
+        "labor_used": 49.75
+      },
+      {
+        "labor_hours": 60,
+        "profit": 1635.57806785764,
+        "n_dishes": 10,
+        "labor_used": 59.9999999
+      },
+      {
+        "labor_hours": 65,
+        "profit": 1709.5335137499999,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "labor_hours": 70,
+        "profit": 1767.5580937500001,
+        "n_dishes": 10,
+        "labor_used": 70.0
+      },
+      {
+        "labor_hours": 80,
+        "profit": 1832.13744,
+        "n_dishes": 10,
+        "labor_used": 79.35
+      }
+    ],
+    "material_cost": [
+      {
+        "cost_multiplier": 0.75,
+        "profit": 1909.2360728124995,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "cost_multiplier": 0.85,
+        "profit": 1829.3550491874998,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "cost_multiplier": 0.95,
+        "profit": 1749.4740255625,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "cost_multiplier": 1.0,
+        "profit": 1709.5335137499999,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "cost_multiplier": 1.05,
+        "profit": 1669.5930019375,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "cost_multiplier": 1.15,
+        "profit": 1589.7119783125002,
+        "n_dishes": 10,
+        "labor_used": 65.0
+      },
+      {
+        "cost_multiplier": 1.25,
+        "profit": 1511.0521635432751,
+        "n_dishes": 10,
+        "labor_used": 64.99999993333333
+      },
+      {
+        "cost_multiplier": 1.5,
+        "profit": 1327.5903743479298,
+        "n_dishes": 10,
+        "labor_used": 64.99999993333333
+      }
+    ],
+    "menu_size": [
+      {
+        "min_dishes": 4,
+        "max_dishes": 6,
+        "profit": 1242.5177700000002,
+        "n_dishes_selected": 6,
+        "labor_used": 59.28333333333333
+      },
+      {
+        "min_dishes": 4,
+        "max_dishes": 8,
+        "profit": 1535.6502400000002,
+        "n_dishes_selected": 8,
+        "labor_used": 64.35
+      },
+      {
+        "min_dishes": 4,
+        "max_dishes": 10,
+        "profit": 1709.5335137499999,
+        "n_dishes_selected": 10,
+        "labor_used": 65.0
+      },
+      {
+        "min_dishes": 4,
+        "max_dishes": 12,
+        "profit": 1717.4112821075598,
+        "n_dishes_selected": 11,
+        "labor_used": 65.00000003333334
+      },
+      {
+        "min_dishes": 6,
+        "max_dishes": 6,
+        "profit": 1242.5177700000002,
+        "n_dishes_selected": 6,
+        "labor_used": 59.28333333333333
+      },
+      {
+        "min_dishes": 6,
+        "max_dishes": 8,
+        "profit": 1535.6502400000002,
+        "n_dishes_selected": 8,
+        "labor_used": 64.35
+      },
+      {
+        "min_dishes": 6,
+        "max_dishes": 10,
+        "profit": 1709.5335137499999,
+        "n_dishes_selected": 10,
+        "labor_used": 65.0
+      },
+      {
+        "min_dishes": 6,
+        "max_dishes": 12,
+        "profit": 1717.4112821075598,
+        "n_dishes_selected": 11,
+        "labor_used": 65.00000003333334
+      },
+      {
+        "min_dishes": 8,
+        "max_dishes": 8,
+        "profit": 1535.6502400000002,
+        "n_dishes_selected": 8,
+        "labor_used": 64.35
+      },
+      {
+        "min_dishes": 8,
+        "max_dishes": 10,
+        "profit": 1709.5335137499999,
+        "n_dishes_selected": 10,
+        "labor_used": 65.0
+      },
+      {
+        "min_dishes": 8,
+        "max_dishes": 12,
+        "profit": 1717.4112821075598,
+        "n_dishes_selected": 11,
+        "labor_used": 65.00000003333334
+      }
+    ]
+  },
+  "economic_analysis": {
+    "moussakas": {
+      "name": "Μουσακάς",
+      "category": "κυρίως",
+      "price": 12.5,
+      "ingredient_cost": 4.91,
+      "labor_cost": 2.86,
+      "variable_cost": 8.064,
+      "contribution_margin": 4.436,
+      "margin_percentage": 35.5,
+      "fixed_setup_cost": 40.0,
+      "demand_min": 8,
+      "demand_max": 50,
+      "labor_min": 22
+    },
+    "pastitsio": {
+      "name": "Παστίτσιο",
+      "category": "κυρίως",
+      "price": 12.0,
+      "ingredient_cost": 4.077,
+      "labor_cost": 2.6,
+      "variable_cost": 6.921,
+      "contribution_margin": 5.079,
+      "margin_percentage": 42.3,
+      "fixed_setup_cost": 38.0,
+      "demand_min": 7,
+      "demand_max": 45,
+      "labor_min": 20
+    },
+    "gemista": {
+      "name": "Γεμιστά",
+      "category": "κυρίως",
+      "price": 9.5,
+      "ingredient_cost": 1.872,
+      "labor_cost": 2.34,
+      "variable_cost": 4.324,
+      "contribution_margin": 5.176,
+      "margin_percentage": 54.5,
+      "fixed_setup_cost": 28.0,
+      "demand_min": 5,
+      "demand_max": 35,
+      "labor_min": 18
+    },
+    "makaronia_kima": {
+      "name": "Μακαρόνια με κιμά",
+      "category": "κυρίως",
+      "price": 10.5,
+      "ingredient_cost": 3.123,
+      "labor_cost": 1.69,
+      "variable_cost": 5.0,
+      "contribution_margin": 5.5,
+      "margin_percentage": 52.4,
+      "fixed_setup_cost": 24.0,
+      "demand_min": 7,
+      "demand_max": 45,
+      "labor_min": 13
+    },
+    "pastitsada_kotopoulo": {
+      "name": "Παστιτσάδα κοτόπουλο",
+      "category": "κυρίως",
+      "price": 13.0,
+      "ingredient_cost": 3.933,
+      "labor_cost": 3.25,
+      "variable_cost": 7.419,
+      "contribution_margin": 5.581,
+      "margin_percentage": 42.9,
+      "fixed_setup_cost": 45.0,
+      "demand_min": 5,
+      "demand_max": 30,
+      "labor_min": 25
+    },
+    "stifado": {
+      "name": "Στιφάδο (μοσχαρίσιο)",
+      "category": "κυρίως",
+      "price": 13.5,
+      "ingredient_cost": 4.444,
+      "labor_cost": 3.64,
+      "variable_cost": 8.351,
+      "contribution_margin": 5.149,
+      "margin_percentage": 38.1,
+      "fixed_setup_cost": 50.0,
+      "demand_min": 4,
+      "demand_max": 28,
+      "labor_min": 28
+    },
+    "briam": {
+      "name": "Μπριάμ",
+      "category": "κυρίως",
+      "price": 8.5,
+      "ingredient_cost": 1.818,
+      "labor_cost": 1.82,
+      "variable_cost": 3.747,
+      "contribution_margin": 4.753,
+      "margin_percentage": 55.9,
+      "fixed_setup_cost": 22.0,
+      "demand_min": 4,
+      "demand_max": 32,
+      "labor_min": 14
+    },
+    "fasolada": {
+      "name": "Φασολάδα",
+      "category": "κυρίως",
+      "price": 7.5,
+      "ingredient_cost": 1.05,
+      "labor_cost": 1.3,
+      "variable_cost": 2.413,
+      "contribution_margin": 5.087,
+      "margin_percentage": 67.8,
+      "fixed_setup_cost": 15.0,
+      "demand_min": 4,
+      "demand_max": 30,
+      "labor_min": 10
+    },
+    "yiouvetsi": {
+      "name": "Γιουβέτσι (κιμάς)",
+      "category": "κυρίως",
+      "price": 11.0,
+      "ingredient_cost": 3.294,
+      "labor_cost": 2.08,
+      "variable_cost": 5.572,
+      "contribution_margin": 5.428,
+      "margin_percentage": 49.3,
+      "fixed_setup_cost": 32.0,
+      "demand_min": 5,
+      "demand_max": 35,
+      "labor_min": 16
+    },
+    "spanakorizo": {
+      "name": "Σπανακόρυζο",
+      "category": "πρώτο",
+      "price": 8.5,
+      "ingredient_cost": 1.419,
+      "labor_cost": 1.3,
+      "variable_cost": 2.804,
+      "contribution_margin": 5.696,
+      "margin_percentage": 67.0,
+      "fixed_setup_cost": 18.0,
+      "demand_min": 6,
+      "demand_max": 40,
+      "labor_min": 10
+    },
+    "gigantes_plaki": {
+      "name": "Γίγαντες πλακί",
+      "category": "πρώτο",
+      "price": 9.0,
+      "ingredient_cost": 1.07,
+      "labor_cost": 1.56,
+      "variable_cost": 2.694,
+      "contribution_margin": 6.306,
+      "margin_percentage": 70.1,
+      "fixed_setup_cost": 20.0,
+      "demand_min": 5,
+      "demand_max": 32,
+      "labor_min": 12
+    },
+    "mpamies_lathi": {
+      "name": "Μπάμιες λάδι",
+      "category": "πρώτο",
+      "price": 8.0,
+      "ingredient_cost": 1.69,
+      "labor_cost": 1.43,
+      "variable_cost": 3.221,
+      "contribution_margin": 4.779,
+      "margin_percentage": 59.7,
+      "fixed_setup_cost": 19.0,
+      "demand_min": 4,
+      "demand_max": 28,
+      "labor_min": 11
+    },
+    "kolokithokeftedes": {
+      "name": "Κολοκιθοκεφτέδες",
+      "category": "πρώτο",
+      "price": 8.5,
+      "ingredient_cost": 1.586,
+      "labor_cost": 1.82,
+      "variable_cost": 3.501,
+      "contribution_margin": 4.999,
+      "margin_percentage": 58.8,
+      "fixed_setup_cost": 22.0,
+      "demand_min": 4,
+      "demand_max": 30,
+      "labor_min": 14
+    },
+    "melitzanosalata": {
+      "name": "Μελιτζανοσαλάτα",
+      "category": "πρώτο",
+      "price": 7.5,
+      "ingredient_cost": 1.308,
+      "labor_cost": 1.04,
+      "variable_cost": 2.426,
+      "contribution_margin": 5.074,
+      "margin_percentage": 67.6,
+      "fixed_setup_cost": 14.0,
+      "demand_min": 5,
+      "demand_max": 35,
+      "labor_min": 8
+    },
+    "keftedes": {
+      "name": "Κεφτέδες",
+      "category": "κυρίως",
+      "price": 10.5,
+      "ingredient_cost": 3.279,
+      "labor_cost": 2.08,
+      "variable_cost": 5.556,
+      "contribution_margin": 4.944,
+      "margin_percentage": 47.1,
+      "fixed_setup_cost": 26.0,
+      "demand_min": 6,
+      "demand_max": 42,
+      "labor_min": 16
+    },
+    "keftedes_hirino": {
+      "name": "Κεφτέδες χοιρινές",
+      "category": "κυρίως",
+      "price": 9.5,
+      "ingredient_cost": 2.81,
+      "labor_cost": 1.95,
+      "variable_cost": 4.928,
+      "contribution_margin": 4.572,
+      "margin_percentage": 48.1,
+      "fixed_setup_cost": 24.0,
+      "demand_min": 5,
+      "demand_max": 40,
+      "labor_min": 15
+    },
+    "keftedes_tomata": {
+      "name": "Κεφτέδες σμέας",
+      "category": "κυρίως",
+      "price": 11.0,
+      "ingredient_cost": 3.259,
+      "labor_cost": 2.34,
+      "variable_cost": 5.794,
+      "contribution_margin": 5.206,
+      "margin_percentage": 47.3,
+      "fixed_setup_cost": 28.0,
+      "demand_min": 5,
+      "demand_max": 38,
+      "labor_min": 18
+    },
+    "paidakia": {
+      "name": "Παϊδάκια (κατεψυγμένα)",
+      "category": "κυρίως",
+      "price": 15.0,
+      "ingredient_cost": 3.94,
+      "labor_cost": 1.56,
+      "variable_cost": 5.736,
+      "contribution_margin": 9.264,
+      "margin_percentage": 61.8,
+      "fixed_setup_cost": 35.0,
+      "demand_min": 3,
+      "demand_max": 20,
+      "labor_min": 12
+    },
+    "souvlaki": {
+      "name": "Σουβλάκι κοτόπουλο",
+      "category": "κυρίως",
+      "price": 11.5,
+      "ingredient_cost": 3.018,
+      "labor_cost": 1.82,
+      "variable_cost": 5.019,
+      "contribution_margin": 6.481,
+      "margin_percentage": 56.4,
+      "fixed_setup_cost": 30.0,
+      "demand_min": 6,
+      "demand_max": 44,
+      "labor_min": 14
+    },
+    "garides_saganaki": {
+      "name": "Γαρίδες σαγανάκι",
+      "category": "κυρίως",
+      "price": 16.0,
+      "ingredient_cost": 4.102,
+      "labor_cost": 1.56,
+      "variable_cost": 5.908,
+      "contribution_margin": 10.092,
+      "margin_percentage": 63.1,
+      "fixed_setup_cost": 40.0,
+      "demand_min": 2,
+      "demand_max": 15,
+      "labor_min": 12
+    },
+    "htapodi_stifado": {
+      "name": "Χταπόδι στιφάδο",
+      "category": "κυρίως",
+      "price": 14.0,
+      "ingredient_cost": 4.32,
+      "labor_cost": 3.9,
+      "variable_cost": 8.479,
+      "contribution_margin": 5.521,
+      "margin_percentage": 39.4,
+      "fixed_setup_cost": 48.0,
+      "demand_min": 2,
+      "demand_max": 12,
+      "labor_min": 30
+    }
+  }
+}

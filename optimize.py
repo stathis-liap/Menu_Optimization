@@ -207,6 +207,83 @@ def solve_mip(waste_fraction=None, waste_penalty=None, labor_hours=None,
     return result
 
 
+# ---------------------------------------------------------------------------
+# ΜΟΝΤΕΛΟ Β — ΓΡΑΜΜΙΚΗ ΧΑΛΑΡΩΣΗ (LP RELAXATION) ΓΙΑ ΤΟ ΔΙΑΚΕΝΟ ΑΚΕΡΑΙΟΤΗΤΑΣ
+# ---------------------------------------------------------------------------
+def solve_mip_relaxation(waste_fraction=None, waste_penalty=None, labor_hours=None,
+                         max_dishes=None, min_dishes=None, verbose=True):
+    """
+    Επιλύει τη ΓΡΑΜΜΙΚΗ ΧΑΛΑΡΩΣΗ του Μοντέλου Β: πανομοιότυπο MIP αλλά με τις
+    δυαδικές μεταβλητές y_d χαλαρωμένες σε συνεχείς y_d ∈ [0,1].
+
+    Είναι ΑΚΡΙΒΩΣ η χαλάρωση που λύνει ο branch & bound στη ρίζα του δέντρου
+    αναζήτησης· δίνει άνω φράγμα του Z_MIP. Η διαφορά από την ακέραια λύση είναι
+    το «διάκενο ακεραιότητας» (integrality gap).
+
+    Returns:
+        dict με τα ίδια κλειδιά με το solve_mip (η on_menu περιέχει τα κλασματικά y).
+    """
+    if labor_hours is None:
+        labor_hours = PARAMS["labor_hours_available"]
+    if max_dishes is None:
+        max_dishes = PARAMS["max_dishes_on_menu"]
+    if min_dishes is None:
+        min_dishes = PARAMS["min_dishes_on_menu"]
+
+    prob = pulp.LpProblem("Menu_MIP_relax", pulp.LpMaximize)
+    x = {d: pulp.LpVariable(f"x_{d}", lowBound=0) for d in DISHES}
+    # y χαλαρωμένο: συνεχές στο [0,1] αντί για δυαδικό
+    y = {d: pulp.LpVariable(f"y_{d}", lowBound=0, upBound=1) for d in DISHES}
+
+    prob += (
+        pulp.lpSum(contribution_margin(d, waste_fraction, waste_penalty) * x[d]
+                   for d in DISHES)
+        - pulp.lpSum(DISHES[d]["fixed_setup"] * y[d] for d in DISHES),
+        "Total_Net_Profit"
+    )
+    prob += (pulp.lpSum((DISHES[d]["labor_min"] / 60.0) * x[d] for d in DISHES)
+             <= labor_hours, "Labor_Hours")
+    for d in DISHES:
+        prob += x[d] <= DISHES[d]["demand_max"] * y[d], f"MaxDemand_{d}"
+        prob += x[d] >= DISHES[d]["demand_min"] * y[d], f"MinDemand_{d}"
+    prob += pulp.lpSum(y[d] for d in DISHES) <= max_dishes, "MaxMenuSize"
+    prob += pulp.lpSum(y[d] for d in DISHES) >= min_dishes, "MinMenuSize"
+
+    prob.solve(pulp.PULP_CBC_CMD(msg=0))
+    portions = {d: (x[d].value() or 0.0) for d in DISHES}
+    on_menu = {d: (y[d].value() or 0.0) for d in DISHES}   # κλασματικά y
+    labor_used = sum((DISHES[d]["labor_min"] / 60.0) * portions[d] for d in DISHES)
+    result = {
+        "status": pulp.LpStatus[prob.status],
+        "profit": pulp.value(prob.objective),
+        "portions": portions,
+        "on_menu": on_menu,
+        "labor_used": labor_used,
+    }
+    if verbose:
+        print(f"LP-χαλάρωση Μοντέλου Β: κέρδος = {result['profit']:.2f} € "
+              f"(κλασματικά y: {sum(1 for v in on_menu.values() if 1e-6 < v < 1-1e-6)})")
+    return result
+
+
+def integrality_gap(**kwargs):
+    """
+    Υπολογίζει το διάκενο ακεραιότητας του Μοντέλου Β:
+        gap = Z(LP-χαλάρωση) − Z(MIP)  ≥ 0.
+    """
+    relax = solve_mip_relaxation(verbose=False, **kwargs)
+    integer = solve_mip(verbose=False, **kwargs)
+    gap = relax["profit"] - integer["profit"]
+    return {
+        "relaxation_bound": relax["profit"],
+        "integer_optimum": integer["profit"],
+        "gap_absolute": gap,
+        "gap_percent": 100.0 * gap / relax["profit"] if relax["profit"] else 0.0,
+        "fractional_y": {d: v for d, v in relax["on_menu"].items()
+                         if 1e-6 < v < 1 - 1e-6},
+    }
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # ΒΟΗΘΗΤΙΚΕΣ ΣΥΝΑΡΤΗΣΕΙΣ
 # ─────────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,293 @@
+{
+  "labor_rhs_range": {
+    "H0": 65.0,
+    "shadow": 20.369657,
+    "H_low": 61.883333333335,
+    "H_high": 69.34999999999499,
+    "allowable_decrease": 3.1166666666649974,
+    "allowable_increase": 4.349999999994992
+  },
+  "objective_ranging": [
+    {
+      "code": "moussakas",
+      "name": "Μουσακάς",
+      "margin": 4.436,
+      "produced": false,
+      "reduced_cost": -3.033,
+      "allow_increase": 3.033,
+      "allow_decrease": null
+    },
+    {
+      "code": "pastitsio",
+      "name": "Παστίτσιο",
+      "margin": 5.079,
+      "produced": false,
+      "reduced_cost": -1.711,
+      "allow_increase": 1.711,
+      "allow_decrease": null
+    },
+    {
+      "code": "gemista",
+      "name": "Γεμιστά",
+      "margin": 5.176,
+      "produced": false,
+      "reduced_cost": -0.935,
+      "allow_increase": 0.935,
+      "allow_decrease": null
+    },
+    {
+      "code": "makaronia_kima",
+      "name": "Μακαρόνια με κιμά",
+      "margin": 5.5,
+      "produced": true,
+      "reduced_cost": -0.0,
+      "allow_increase": null,
+      "allow_decrease": 1.086
+    },
+    {
+      "code": "pastitsada_kotopoulo",
+      "name": "Παστιτσάδα κοτόπουλο",
+      "margin": 5.581,
+      "produced": false,
+      "reduced_cost": -2.906,
+      "allow_increase": 2.906,
+      "allow_decrease": null
+    },
+    {
+      "code": "stifado",
+      "name": "Στιφάδο (μοσχαρίσιο)",
+      "margin": 5.149,
+      "produced": false,
+      "reduced_cost": -4.356,
+      "allow_increase": 4.356,
+      "allow_decrease": null
+    },
+    {
+      "code": "briam",
+      "name": "Μπριάμ",
+      "margin": 4.753,
+      "produced": true,
+      "reduced_cost": -0.0,
+      "allow_increase": 0.246,
+      "allow_decrease": 0.003
+    },
+    {
+      "code": "fasolada",
+      "name": "Φασολάδα",
+      "margin": 5.087,
+      "produced": true,
+      "reduced_cost": 0.0,
+      "allow_increase": null,
+      "allow_decrease": 1.692
+    },
+    {
+      "code": "yiouvetsi",
+      "name": "Γιουβέτσι (κιμάς)",
+      "margin": 5.428,
+      "produced": false,
+      "reduced_cost": -0.004,
+      "allow_increase": 0.004,
+      "allow_decrease": null
+    },
+    {
+      "code": "spanakorizo",
+      "name": "Σπανακόρυζο",
+      "margin": 5.696,
+      "produced": true,
+      "reduced_cost": -0.0,
+      "allow_increase": null,
+      "allow_decrease": 2.301
+    },
+    {
+      "code": "gigantes_plaki",
+      "name": "Γίγαντες πλακί",
+      "margin": 6.306,
+      "produced": true,
+      "reduced_cost": 0.0,
+      "allow_increase": null,
+      "allow_decrease": 2.232
+    },
+    {
+      "code": "mpamies_lathi",
+      "name": "Μπάμιες λάδι",
+      "margin": 4.779,
+      "produced": true,
+      "reduced_cost": -0.0,
+      "allow_increase": null,
+      "allow_decrease": 1.044
+    },
+    {
+      "code": "kolokithokeftedes",
+      "name": "Κολοκιθοκεφτέδες",
+      "margin": 4.999,
+      "produced": true,
+      "reduced_cost": 0.0,
+      "allow_increase": null,
+      "allow_decrease": 0.246
+    },
+    {
+      "code": "melitzanosalata",
+      "name": "Μελιτζανοσαλάτα",
+      "margin": 5.074,
+      "produced": true,
+      "reduced_cost": 0.0,
+      "allow_increase": null,
+      "allow_decrease": 2.358
+    },
+    {
+      "code": "keftedes",
+      "name": "Κεφτέδες",
+      "margin": 4.944,
+      "produced": false,
+      "reduced_cost": -0.488,
+      "allow_increase": 0.488,
+      "allow_decrease": null
+    },
+    {
+      "code": "keftedes_hirino",
+      "name": "Κεφτέδες χοιρινές",
+      "margin": 4.572,
+      "produced": false,
+      "reduced_cost": -0.52,
+      "allow_increase": 0.52,
+      "allow_decrease": null
+    },
+    {
+      "code": "keftedes_tomata",
+      "name": "Κεφτέδες σμέας",
+      "margin": 5.206,
+      "produced": false,
+      "reduced_cost": -0.905,
+      "allow_increase": 0.905,
+      "allow_decrease": null
+    },
+    {
+      "code": "paidakia",
+      "name": "Παϊδάκια (κατεψυγμένα)",
+      "margin": 9.264,
+      "produced": true,
+      "reduced_cost": -0.0,
+      "allow_increase": null,
+      "allow_decrease": 5.19
+    },
+    {
+      "code": "souvlaki",
+      "name": "Σουβλάκι κοτόπουλο",
+      "margin": 6.481,
+      "produced": true,
+      "reduced_cost": -0.0,
+      "allow_increase": null,
+      "allow_decrease": 1.729
+    },
+    {
+      "code": "garides_saganaki",
+      "name": "Γαρίδες σαγανάκι",
+      "margin": 10.092,
+      "produced": true,
+      "reduced_cost": -0.0,
+      "allow_increase": null,
+      "allow_decrease": 6.018
+    },
+    {
+      "code": "htapodi_stifado",
+      "name": "Χταπόδι στιφάδο",
+      "margin": 5.521,
+      "produced": false,
+      "reduced_cost": -4.664,
+      "allow_increase": 4.664,
+      "allow_decrease": null
+    }
+  ],
+  "labor_breakpoints": [
+    {
+      "H_from": 0.0,
+      "H_to": 2.75,
+      "shadow": 50.462
+    },
+    {
+      "H_from": 3.0,
+      "H_to": 6.75,
+      "shadow": 46.3207
+    },
+    {
+      "H_from": 7.0,
+      "H_to": 11.5,
+      "shadow": 38.0514
+    },
+    {
+      "H_from": 11.75,
+      "H_to": 18.25,
+      "shadow": 34.1783
+    },
+    {
+      "H_from": 18.5,
+      "H_to": 24.5,
+      "shadow": 31.529
+    },
+    {
+      "H_from": 24.75,
+      "H_to": 29.5,
+      "shadow": 30.522
+    },
+    {
+      "H_from": 29.75,
+      "H_to": 39.75,
+      "shadow": 27.7776
+    },
+    {
+      "H_from": 40.0,
+      "H_to": 45.0,
+      "shadow": 26.0651
+    },
+    {
+      "H_from": 45.25,
+      "H_to": 54.75,
+      "shadow": 25.3829
+    },
+    {
+      "H_from": 55.0,
+      "H_to": 61.75,
+      "shadow": 21.4236
+    },
+    {
+      "H_from": 62.0,
+      "H_to": 69.25,
+      "shadow": 20.3697
+    },
+    {
+      "H_from": 69.5,
+      "H_to": 78.5,
+      "shadow": 20.3563
+    },
+    {
+      "H_from": 78.75,
+      "H_to": 89.75,
+      "shadow": 18.541
+    },
+    {
+      "H_from": 90.0,
+      "H_to": 99.75,
+      "shadow": 18.2877
+    },
+    {
+      "H_from": 100.0,
+      "H_to": 111.25,
+      "shadow": 17.3533
+    },
+    {
+      "H_from": 111.5,
+      "H_to": 121.75,
+      "shadow": 17.254
+    },
+    {
+      "H_from": 122.0,
+      "H_to": 136.75,
+      "shadow": 15.2367
+    },
+    {
+      "H_from": 137.0,
+      "H_to": 140.0,
+      "shadow": 13.3944
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "generated_at": "2026-07-02T19:35:08.661051",
+  "lp_profit_daily": 1976.41,
+  "mip_profit_daily": 1709.53,
+  "profit_difference": 266.88,
+  "mip_dishes_count": 10,
+  "efficiency_ranking": [
+    {
+      "rank": 1,
+      "dish": "Γαρίδες σαγανάκι",
+      "code": "garides_saganaki",
+      "margin_per_hour": 50.46,
+      "in_lp": true,
+      "in_mip": true
+    },
+    {
+      "rank": 2,
+      "dish": "Παϊδάκια (κατεψυγμένα)",
+      "code": "paidakia",
+      "margin_per_hour": 46.32,
+      "in_lp": true,
+      "in_mip": true
+    },
+    {
+      "rank": 3,
+      "dish": "Μελιτζανοσαλάτα",
+      "code": "melitzanosalata",
+      "margin_per_hour": 38.05,
+      "in_lp": true,
+      "in_mip": true
+    },
+    {
+      "rank": 4,
+      "dish": "Σπανακόρυζο",
+      "code": "spanakorizo",
+      "margin_per_hour": 34.18,
+      "in_lp": true,
+      "in_mip": true
+    },
+    {
+      "rank": 5,
+      "dish": "Γίγαντες πλακί",
+      "code": "gigantes_plaki",
+      "margin_per_hour": 31.53,
+      "in_lp": true,
+      "in_mip": true
+    },
+    {
+      "rank": 6,
+      "dish": "Φασολάδα",
+      "code": "fasolada",
+      "margin_per_hour": 30.52,
+      "in_lp": true,
+      "in_mip": true
+    },
+    {
+      "rank": 7,
+      "dish": "Σουβλάκι κοτόπουλο",
+      "code": "souvlaki",
+      "margin_per_hour": 27.78,
+      "in_lp": true,
+      "in_mip": true
+    },
+    {
+      "rank": 8,
+      "dish": "Μπάμιες λάδι",
+      "code": "mpamies_lathi",
+      "margin_per_hour": 26.07,
+      "in_lp": true,
+      "in_mip": true
+    },
+    {
+      "rank": 9,
+      "dish": "Μακαρόνια με κιμά",
+      "code": "makaronia_kima",
+      "margin_per_hour": 25.38,
+      "in_lp": true,
+      "in_mip": true
+    },
+    {
+      "rank": 10,
+      "dish": "Κολοκιθοκεφτέδες",
+      "code": "kolokithokeftedes",
+      "margin_per_hour": 21.42,
+      "in_lp": true,
+      "in_mip": false
+    },
+    {
+      "rank": 11,
+      "dish": "Μπριάμ",
+      "code": "briam",
+      "margin_per_hour": 20.37,
+      "in_lp": true,
+      "in_mip": false
+    },
+    {
+      "rank": 12,
+      "dish": "Γιουβέτσι (κιμάς)",
+      "code": "yiouvetsi",
+      "margin_per_hour": 20.36,
+      "in_lp": false,
+      "in_mip": false
+    },
+    {
+      "rank": 13,
+      "dish": "Κεφτέδες",
+      "code": "keftedes",
+      "margin_per_hour": 18.54,
+      "in_lp": false,
+      "in_mip": true
+    },
+    {
+      "rank": 14,
+      "dish": "Κεφτέδες χοιρινές",
+      "code": "keftedes_hirino",
+      "margin_per_hour": 18.29,
+      "in_lp": false,
+      "in_mip": false
+    },
+    {
+      "rank": 15,
+      "dish": "Κεφτέδες σμέας",
+      "code": "keftedes_tomata",
+      "margin_per_hour": 17.35,
+      "in_lp": false,
+      "in_mip": false
+    },
+    {
+      "rank": 16,
+      "dish": "Γεμιστά",
+      "code": "gemista",
+      "margin_per_hour": 17.25,
+      "in_lp": false,
+      "in_mip": false
+    },
+    {
+      "rank": 17,
+      "dish": "Παστίτσιο",
+      "code": "pastitsio",
+      "margin_per_hour": 15.24,
+      "in_lp": false,
+      "in_mip": false
+    },
+    {
+      "rank": 18,
+      "dish": "Παστιτσάδα κοτόπουλο",
+      "code": "pastitsada_kotopoulo",
+      "margin_per_hour": 13.39,
+      "in_lp": false,
+      "in_mip": false
+    },
+    {
+      "rank": 19,
+      "dish": "Μουσακάς",
+      "code": "moussakas",
+      "margin_per_hour": 12.1,
+      "in_lp": false,
+      "in_mip": false
+    },
+    {
+      "rank": 20,
+      "dish": "Χταπόδι στιφάδο",
+      "code": "htapodi_stifado",
+      "margin_per_hour": 11.04,
+      "in_lp": false,
+      "in_mip": false
+    },
+    {
+      "rank": 21,
+      "dish": "Στιφάδο (μοσχαρίσιο)",
+      "code": "stifado",
+      "margin_per_hour": 11.03,
+      "in_lp": false,
+      "in_mip": false
+    }
+  ],
+  "selected_mip_dishes": [
+    {
+      "name": "Φασολάδα",
+      "code": "fasolada",
+      "portions": 30.0,
+      "demand_min": 4,
+      "demand_max": 30,
+      "price": 7.5,
+      "margin": 5.09,
+      "fixed_cost": 15.0,
+      "gross_contribution": 152.61,
+      "net_contribution": 137.61
+    },
+    {
+      "name": "Γαρίδες σαγανάκι",
+      "code": "garides_saganaki",
+      "portions": 15.0,
+      "demand_min": 2,
+      "demand_max": 15,
+      "price": 16.0,
+      "margin": 10.09,
+      "fixed_cost": 40.0,
+      "gross_contribution": 151.39,
+      "net_contribution": 111.39
+    },
+    {
+      "name": "Γίγαντες πλακί",
+      "code": "gigantes_plaki",
+      "portions": 32.0,
+      "demand_min": 5,
+      "demand_max": 32,
+      "price": 9.0,
+      "margin": 6.31,
+      "fixed_cost": 20.0,
+      "gross_contribution": 201.79,
+      "net_contribution": 181.79
+    },
+    {
+      "name": "Κεφτέδες",
+      "code": "keftedes",
+      "portions": 37.9,
+      "demand_min": 6,
+      "demand_max": 42,
+      "price": 10.5,
+      "margin": 4.94,
+      "fixed_cost": 26.0,
+      "gross_contribution": 187.57,
+      "net_contribution": 161.57
+    },
+    {
+      "name": "Μακαρόνια με κιμά",
+      "code": "makaronia_kima",
+      "portions": 45.0,
+      "demand_min": 7,
+      "demand_max": 45,
+      "price": 10.5,
+      "margin": 5.5,
+      "fixed_cost": 24.0,
+      "gross_contribution": 247.48,
+      "net_contribution": 223.48
+    },
+    {
+      "name": "Μελιτζανοσαλάτα",
+      "code": "melitzanosalata",
+      "portions": 35.0,
+      "demand_min": 5,
+      "demand_max": 35,
+      "price": 7.5,
+      "margin": 5.07,
+      "fixed_cost": 14.0,
+      "gross_contribution": 177.57,
+      "net_contribution": 163.57
+    },
+    {
+      "name": "Μπάμιες λάδι",
+      "code": "mpamies_lathi",
+      "portions": 28.0,
+      "demand_min": 4,
+      "demand_max": 28,
+      "price": 8.0,
+      "margin": 4.78,
+      "fixed_cost": 19.0,
+      "gross_contribution": 133.8,
+      "net_contribution": 114.8
+    },
+    {
+      "name": "Παϊδάκια (κατεψυγμένα)",
+      "code": "paidakia",
+      "portions": 20.0,
+      "demand_min": 3,
+      "demand_max": 20,
+      "price": 15.0,
+      "margin": 9.26,
+      "fixed_cost": 35.0,
+      "gross_contribution": 185.28,
+      "net_contribution": 150.28
+    },
+    {
+      "name": "Σουβλάκι κοτόπουλο",
+      "code": "souvlaki",
+      "portions": 44.0,
+      "demand_min": 6,
+      "demand_max": 44,
+      "price": 11.5,
+      "margin": 6.48,
+      "fixed_cost": 30.0,
+      "gross_contribution": 285.18,
+      "net_contribution": 255.18
+    },
+    {
+      "name": "Σπανακόρυζο",
+      "code": "spanakorizo",
+      "portions": 40.0,
+      "demand_min": 6,
+      "demand_max": 40,
+      "price": 8.5,
+      "margin": 5.7,
+      "fixed_cost": 18.0,
+      "gross_contribution": 227.86,
+      "net_contribution": 209.86
+    }
+  ],
+  "sensitivity_analysis": {
+    "material_cost": [
+      {
+        "multiplier": 0.75,
+        "profit": 1909.24
+      },
+      {
+        "multiplier": 0.85,
+        "profit": 1829.36
+      },
+      {
+        "multiplier": 0.95,
+        "profit": 1749.47
+      },
+      {
+        "multiplier": 1.0,
+        "profit": 1709.53
+      },
+      {
+        "multiplier": 1.1,
+        "profit": 1629.65
+      },
+      {
+        "multiplier": 1.25,
+        "profit": 1511.05
+      },
+      {
+        "multiplier": 1.5,
+        "profit": 1327.59
+      }
+    ],
+    "labor_hours": [
+      {
+        "hours": 40,
+        "profit": 1209.68
+      },
+      {
+        "hours": 50,
+        "profit": 1433.16
+      },
+      {
+        "hours": 60,
+        "profit": 1635.58
+      },
+      {
+        "hours": 65,
+        "profit": 1709.53
+      },
+      {
+        "hours": 70,
+        "profit": 1767.56
+      },
+      {
+        "hours": 80,
+        "profit": 1832.14
+      },
+      {
+        "hours": 90,
+        "profit": 1885.08
+      },
+      {
+        "hours": 100,
+        "profit": 1908.0
+      },
+      {
+        "hours": 120,
+        "profit": 1916.59
+      }
+    ],
+    "waste_percentage": [
+      {
+        "waste_pct": 0.0,
+        "profit": 1754.75
+      },
+      {
+        "waste_pct": 3.0,
+        "profit": 1732.14
+      },
+      {
+        "waste_pct": 6.0,
+        "profit": 1709.53
+      },
+      {
+        "waste_pct": 9.0,
+        "profit": 1686.93
+      },
+      {
+        "waste_pct": 12.0,
+        "profit": 1664.32
+      },
+      {
+        "waste_pct": 15.0,
+        "profit": 1641.71
+      },
+      {
+        "waste_pct": 20.0,
+        "profit": 1604.03
+      }
+    ]
+  },
+  "key_insights": [
+    "Material cost is the HIGHEST impact factor (±50% change → ±€350/day)",
+    "Reducing waste from 6% to 3% adds ~€50-60/day to profit",
+    "At current 65 labor hours, profit is almost saturated (diminishing returns after 70h)",
+    "MIP selects 10 dishes with total profit €1709.53",
+    "Top 3 efficient dishes drive most of the profit via high margin/hour ratio"
+  ]
+}
